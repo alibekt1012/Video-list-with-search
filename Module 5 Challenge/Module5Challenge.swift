@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct Module_5_ChallengeApp: App {
+struct Module5Challenge: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VideoListView()
+                .environmentObject(VideoModel())
         }
     }
 }
